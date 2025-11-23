@@ -5,14 +5,25 @@
   z-index: 1;
 }
 
-/* Адрес */
 address {
   font-style: normal;
-  line-height: 1.35;
+}
+
+.address {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address__link {
+  text-decoration: none;
+}
+
+.address__text {
+  display: block;
+  margin: 0;
 }
 
 /* HEADER */
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -27,6 +38,8 @@ address {
   display: flex;
   gap: 34px;
   list-style: circle;
+  margin: 0;
+  padding: 0;
 }
 
 .header__links-list-item_no-bullit {
@@ -52,13 +65,12 @@ address {
 }
 
 /* COVER (ОБЛОЖКА) */
-
 .cover {
   position: relative;
-  background-image: url('../images/cover.jpg');
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 757px; 
+  min-height: 757px;
   padding: 165px 50px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -80,6 +92,10 @@ address {
   gap: 20px;
   z-index: 2;
   position: relative;
+}
+
+.aligned-text {
+  display: block;
 }
 
 .aligned-text_center {
@@ -121,7 +137,6 @@ address {
 }
 
 /* LOTS (КАРТОЧКИ) */
-
 .lots {
   padding: 0 24px;
   margin-bottom: 180px;
@@ -139,7 +154,8 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
 .lots__card-list-item {
@@ -168,13 +184,15 @@ address {
 
 /* Фоны карточек */
 .card_type_film {
-  background-image: url('../images/card-lot-01.jpg');
+  background-image: url("../images/card-lot-01.jpg");
 }
+
 .card_type_book {
-  background-image: url('../images/card-lot-02.jpg');
+  background-image: url("../images/card-lot-02.jpg");
 }
+
 .card_type_picture {
-  background-image: url('../images/card-lot-03.jpg');
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -186,6 +204,8 @@ address {
 
 .card__text {
   font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
   z-index: 2;
 }
 
@@ -242,7 +262,6 @@ address {
 }
 
 /* FOOTER */
-
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -255,11 +274,14 @@ address {
 .footer__menu-list {
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-link {
   text-decoration: underline;
 }
+
 .footer__menu-link_active {
   text-decoration: none;
 }
@@ -270,6 +292,8 @@ address {
   display: flex;
   gap: 48px;
   justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__social-icon {
